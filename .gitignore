@@ -1,8 +1,0 @@
-*.pid
-*.pyc
-*.swp
-.idea
-cache
-pelican-plugins
-pelican-themes
-output
