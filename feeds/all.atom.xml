@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Victor Gau</title><link href="http://victorgau.github.io/" rel="alternate"></link><link href="http://victorgau.github.io/feeds/all.atom.xml" rel="self"></link><id>http://victorgau.github.io/</id><updated>2015-11-12T16:38:00+08:00</updated><entry><title>Setting up Pelican for Github Pages</title><link href="http://victorgau.github.io/setting-up-pelican-for-github-pages.html" rel="alternate"></link><updated>2015-11-12T16:38:00+08:00</updated><author><name>Victor Gau</name></author><id>tag:victorgau.github.io,2015-11-12:setting-up-pelican-for-github-pages.html</id><summary type="html">&lt;p&gt;To set up Pelican for Github pages, follow the following links:&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Victor Gau</title><link href="http://victorgau.github.io/" rel="alternate"></link><link href="http://victorgau.github.io/feeds/all.atom.xml" rel="self"></link><id>http://victorgau.github.io/</id><updated>2015-11-12T16:38:00+08:00</updated><entry><title>Setting up Pelican for Github Pages</title><link href="http://victorgau.github.io/setting-up-pelican-for-github-pages.html" rel="alternate"></link><updated>2015-11-12T16:38:00+08:00</updated><author><name>Victor Gau</name></author><id>tag:victorgau.github.io,2015-11-12:setting-up-pelican-for-github-pages.html</id><summary type="html">&lt;p&gt;To set up Pelican for Github pages, follow the instructions in the following links:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://blog.osteel.me/posts/2015/02/24/install-and-deploy-a-pelican-blog-using-fabric-part-1-local-environment.html"&gt;Install and deploy a Pelican blog using Fabric - Part 1: local environment&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://blog.osteel.me/posts/2015/02/26/install-and-deploy-a-pelican-blog-using-fabric-part-2-installation-and-configuration.html"&gt;Install and deploy a Pelican blog using Fabric - Part 2: installation and configuration&lt;/a&gt;&lt;/li&gt;
@@ -7,7 +7,7 @@
 &lt;li&gt;&lt;a href="http://blog.osteel.me/posts/2015/03/04/install-and-deploy-a-pelican-blog-using-fabric-part-4-workflow-extras-and-conclusion.html"&gt;Install and deploy a Pelican blog using Fabric - Part 4: workflow, extras and conclusion&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://nafiulis.me/making-a-static-blog-with-pelican.html"&gt;Making a Static Blog with Pelican&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Testing Math Equation: &lt;span class="math"&gt;\(e=mc^2\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Testing Math Equation: &lt;span class="math"&gt;\(E=MC^2\)&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Testing Syntax Highlighting:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
 &lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;
