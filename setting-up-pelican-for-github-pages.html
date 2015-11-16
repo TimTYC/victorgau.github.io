@@ -257,15 +257,106 @@ Victor Gau            </a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <p>To set up Pelican for Github pages, follow the instructions in the following links:</p>
-<ul>
-<li><a href="http://blog.osteel.me/posts/2015/02/24/install-and-deploy-a-pelican-blog-using-fabric-part-1-local-environment.html">Install and deploy a Pelican blog using Fabric - Part 1: local environment</a></li>
-<li><a href="http://blog.osteel.me/posts/2015/02/26/install-and-deploy-a-pelican-blog-using-fabric-part-2-installation-and-configuration.html">Install and deploy a Pelican blog using Fabric - Part 2: installation and configuration</a></li>
-<li><a href="http://blog.osteel.me/posts/2015/03/02/install-and-deploy-a-pelican-blog-using-fabric-part-3-fabric.html">Install and deploy a Pelican blog using Fabric - Part 3: Fabric</a></li>
-<li><a href="http://blog.osteel.me/posts/2015/03/04/install-and-deploy-a-pelican-blog-using-fabric-part-4-workflow-extras-and-conclusion.html">Install and deploy a Pelican blog using Fabric - Part 4: workflow, extras and conclusion</a></li>
-<li><a href="http://nafiulis.me/making-a-static-blog-with-pelican.html">Making a Static Blog with Pelican</a></li>
-</ul>
+                <h2>Installation:</h2>
+<p>To install pelican, run the following command.</p>
+<div class="highlight"><pre><span class="err">$</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">pelican</span>
+</pre></div>
+
+
+<p>If you plan to use markdown to write articles, please also install markdown.</p>
+<div class="highlight"><pre><span class="err">$</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">markdown</span>
+</pre></div>
+
+
+<h2>Creating blog with <code>pelican-quickstart</code>:</h2>
+<p>To create your blog, <code>cd</code> to the root directory of your blog and run <code>pelican-quickstart</code></p>
+<div class="highlight"><pre>Victors-MacBook:code victor<span class="nv">$ </span><span class="nb">cd </span>blog
+Victors-MacBook:blog victor<span class="nv">$ </span><span class="nb">pwd</span>
+/Users/victor/code/blog
+Victors-MacBook:blog victor<span class="nv">$ </span>pelican-quickstart
+Welcome to pelican-quickstart v3.6.3.
+
+This script will <span class="nb">help </span>you create a new Pelican-based website.
+
+Please answer the following questions so this script can generate the files
+needed by Pelican.
+
+
+&gt; Where <span class="k">do</span> you want to create your new web site? <span class="o">[</span>.<span class="o">]</span>
+&gt; What will be the title of this web site? Victor Gau
+&gt; Who will be the author of this web site? Victor Gau
+&gt; What will be the default language of this web site? <span class="o">[</span>en<span class="o">]</span>
+&gt; Do you want to specify a URL prefix? e.g., http://example.com   <span class="o">(</span>Y/n<span class="o">)</span>
+&gt; What is your URL prefix? <span class="o">(</span>see above example<span class="p">;</span> no trailing slash<span class="o">)</span> http://victorgau.github.io
+&gt; Do you want to <span class="nb">enable </span>article pagination? <span class="o">(</span>Y/n<span class="o">)</span>
+&gt; How many articles per page <span class="k">do</span> you want? <span class="o">[</span>10<span class="o">]</span>
+&gt; What is your <span class="nb">time </span>zone? <span class="o">[</span>Europe/Paris<span class="o">]</span> Asia/Taipei
+&gt; Do you want to generate a Fabfile/Makefile to automate generation and publishing? <span class="o">(</span>Y/n<span class="o">)</span>
+&gt; Do you want an auto-reload <span class="p">&amp;</span> simpleHTTP script to assist with theme and site development? <span class="o">(</span>Y/n<span class="o">)</span>
+&gt; Do you want to upload your website using FTP? <span class="o">(</span>y/N<span class="o">)</span>
+&gt; Do you want to upload your website using SSH? <span class="o">(</span>y/N<span class="o">)</span>
+&gt; Do you want to upload your website using Dropbox? <span class="o">(</span>y/N<span class="o">)</span>
+&gt; Do you want to upload your website using S3? <span class="o">(</span>y/N<span class="o">)</span>
+&gt; Do you want to upload your website using Rackspace Cloud Files? <span class="o">(</span>y/N<span class="o">)</span>
+&gt; Do you want to upload your website using GitHub Pages? <span class="o">(</span>y/N<span class="o">)</span> Y
+&gt; Is this your personal page <span class="o">(</span>username.github.io<span class="o">)</span>? <span class="o">(</span>y/N<span class="o">)</span> Y
+Done. Your new project is available at /Users/victor/code/blog
+Victors-MacBook:blog victor<span class="err">$</span>
+</pre></div>
+
+
+<p>Since I'd like to put my blog onto github, the answers to the github related questions are 'Yes'.</p>
+<p>The tree structure after running <code>pelican-quickstart</code> is as follows:</p>
+<div class="highlight"><pre>Victors-MacBook:blog victor<span class="nv">$ </span>tree
+.
+├── Makefile
+├── content
+├── develop_server.sh
+├── fabfile.py
+├── output
+├── pelicanconf.py
+└── publishconf.py
+
+<span class="m">2</span> directories, <span class="m">5</span> files
+Victors-MacBook:blog victor<span class="err">$</span>
+</pre></div>
+
+
+<p>There are two configuration files in the directory:</p>
+<p><code>pelicanconf.py</code> is intended to be used for previewing.</p>
+<p><code>publishconf.py</code> is intended to be used for publishing.</p>
+<p><code>Makefile</code> and <code>fabfile.py</code> are intended for automation.</p>
+<p><code>content</code> is the directory for the source code of your articles.</p>
+<p><code>output</code> is the directory for compilation output, i.e., the html files of your static blog.</p>
+<h2>Pelican Themes:</h2>
+<p>You can easily change the style of your blog by setting a specific theme in the configuration file.</p>
+<p>To do so, you need to download the themes first.</p>
+<p>You can do it by running the following command.</p>
+<div class="highlight"><pre><span class="err">$</span> <span class="n">git</span> <span class="n">clone</span> <span class="o">--</span><span class="n">recursive</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">getpelican</span><span class="o">/</span><span class="n">pelican</span><span class="o">-</span><span class="n">themes</span> <span class="o">./</span><span class="n">pelican</span><span class="o">-</span><span class="n">themes</span>
+</pre></div>
+
+
+<p>After downloading the theme files, put the following line in <code>pelicanconf.py</code> or <code>publishconf.py</code> to use the theme.</p>
+<div class="highlight"><pre><span class="n">THEME</span> <span class="o">=</span> <span class="s">&quot;pelican-themes/pelican-bootstrap3&quot;</span>
+</pre></div>
+
+
+<h2>Plugins:</h2>
+<p>Pelican supports varied plugins.  You can use the plugin to render math equations, embed iPython notebook into the post, etc.</p>
+<p>To use plugins, download them first by running the following command.</p>
+<div class="highlight"><pre><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">getpelican</span><span class="o">/</span><span class="n">pelican</span><span class="o">-</span><span class="n">plugins</span><span class="o">.</span><span class="n">git</span>
+</pre></div>
+
+
+<p>And then, put the following settings into <code>pelicanconf.py</code> or <code>publishconf.py</code>.</p>
+<p>The following is an example to use <code>render_math</code> plugin.</p>
+<div class="highlight"><pre><span class="n">PLUGIN_PATHS</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;pelican-plugins&#39;</span><span class="p">]</span>
+<span class="n">PLUGINS</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;render_math&#39;</span><span class="p">]</span>
+</pre></div>
+
+
 <p>Testing Math Equation: <span class="math">\(E=MC^2\)</span></p>
+<p>If you are using markdown, syntax highlighting is already supported.</p>
 <p>Testing Syntax Highlighting:</p>
 <div class="highlight"><pre><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="n">b</span> <span class="o">=</span> <span class="mi">2</span>
@@ -273,6 +364,28 @@ Victor Gau            </a>
 </pre></div>
 
 
+<h2>Fabric:</h2>
+<p>To use fabric for blog automation, please reference to <a href="http://nafiulis.me/making-a-static-blog-with-pelican.html">Nafiul's article</a>.</p>
+<h2>Disqus:</h2>
+<p>Most pelican themes natively support disqus to allow people comment on your post.</p>
+<p>To use disqus, you need to register an account at <a href="https://disqus.com/">disqus.com</a>.</p>
+<p>And then, add your site from <code>disqus.com/admin</code> to get your sitename.</p>
+<p>Add the sitename into the configuration file, <code>pelicanconf.py</code> or <code>publishconf.py</code>.</p>
+<div class="highlight"><pre><span class="nv">DISQUS_SITENAME</span> <span class="o">=</span> <span class="s1">&#39;YourSiteName&#39;</span>
+</pre></div>
+
+
+<p>After setting the <code>DISQUS_SITENAME</code> and re-compilation, You should see disqus comment at the end of your post.</p>
+<p>Note that you would not see disqus comment when testing in the local environment.</p>
+<h2>References:</h2>
+<ul>
+<li><a href="http://blog.osteel.me/posts/2015/02/24/install-and-deploy-a-pelican-blog-using-fabric-part-1-local-environment.html">Install and deploy a Pelican blog using Fabric - Part 1: local environment</a></li>
+<li><a href="http://blog.osteel.me/posts/2015/02/26/install-and-deploy-a-pelican-blog-using-fabric-part-2-installation-and-configuration.html">Install and deploy a Pelican blog using Fabric - Part 2: installation and configuration</a></li>
+<li><a href="http://blog.osteel.me/posts/2015/03/02/install-and-deploy-a-pelican-blog-using-fabric-part-3-fabric.html">Install and deploy a Pelican blog using Fabric - Part 3: Fabric</a></li>
+<li><a href="http://blog.osteel.me/posts/2015/03/04/install-and-deploy-a-pelican-blog-using-fabric-part-4-workflow-extras-and-conclusion.html">Install and deploy a Pelican blog using Fabric - Part 4: workflow, extras and conclusion</a></li>
+<li><a href="http://nafiulis.me/making-a-static-blog-with-pelican.html">Making a Static Blog with Pelican</a></li>
+<li><a href="http://pbpython.com/pelican-config.html">Configuring Pelican Static Blog</a></li>
+</ul>
 <script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
     var align = "center",
         indent = "0em",
@@ -413,6 +526,11 @@ Victor Gau            </a>
         <li class="list-group-item">
             <a href="http://jinja.pocoo.org/" target="_blank">
                 Jinja2
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="https://www.jetbrains.com/pycharm/quickstart/" target="_blank">
+                PyCharm Guide
             </a>
         </li>
         <li class="list-group-item">

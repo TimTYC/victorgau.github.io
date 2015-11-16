@@ -1,13 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Victor Gau</title><link href="http://victorgau.github.io/" rel="alternate"></link><link href="http://victorgau.github.io/feeds/all.atom.xml" rel="self"></link><id>http://victorgau.github.io/</id><updated>2015-11-12T16:38:00+08:00</updated><entry><title>Setting up Pelican for Github Pages</title><link href="http://victorgau.github.io/setting-up-pelican-for-github-pages.html" rel="alternate"></link><updated>2015-11-12T16:38:00+08:00</updated><author><name>Victor Gau</name></author><id>tag:victorgau.github.io,2015-11-12:setting-up-pelican-for-github-pages.html</id><summary type="html">&lt;p&gt;To set up Pelican for Github pages, follow the instructions in the following links:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://blog.osteel.me/posts/2015/02/24/install-and-deploy-a-pelican-blog-using-fabric-part-1-local-environment.html"&gt;Install and deploy a Pelican blog using Fabric - Part 1: local environment&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.osteel.me/posts/2015/02/26/install-and-deploy-a-pelican-blog-using-fabric-part-2-installation-and-configuration.html"&gt;Install and deploy a Pelican blog using Fabric - Part 2: installation and configuration&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.osteel.me/posts/2015/03/02/install-and-deploy-a-pelican-blog-using-fabric-part-3-fabric.html"&gt;Install and deploy a Pelican blog using Fabric - Part 3: Fabric&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.osteel.me/posts/2015/03/04/install-and-deploy-a-pelican-blog-using-fabric-part-4-workflow-extras-and-conclusion.html"&gt;Install and deploy a Pelican blog using Fabric - Part 4: workflow, extras and conclusion&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://nafiulis.me/making-a-static-blog-with-pelican.html"&gt;Making a Static Blog with Pelican&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Victor Gau</title><link href="http://victorgau.github.io/" rel="alternate"></link><link href="http://victorgau.github.io/feeds/all.atom.xml" rel="self"></link><id>http://victorgau.github.io/</id><updated>2015-11-12T16:38:00+08:00</updated><entry><title>Setting up Pelican for Github Pages</title><link href="http://victorgau.github.io/setting-up-pelican-for-github-pages.html" rel="alternate"></link><updated>2015-11-12T16:38:00+08:00</updated><author><name>Victor Gau</name></author><id>tag:victorgau.github.io,2015-11-12:setting-up-pelican-for-github-pages.html</id><summary type="html">&lt;h2&gt;Installation:&lt;/h2&gt;
+&lt;p&gt;To install pelican, run the following command.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;pip&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;pelican&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;If you plan to use markdown to write articles, please also install markdown.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;pip&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;markdown&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Creating blog with &lt;code&gt;pelican-quickstart&lt;/code&gt;:&lt;/h2&gt;
+&lt;p&gt;To create your blog, &lt;code&gt;cd&lt;/code&gt; to the root directory of your blog and run &lt;code&gt;pelican-quickstart&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;Victors-MacBook:code victor&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;blog
+Victors-MacBook:blog victor&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;pwd&lt;/span&gt;
+/Users/victor/code/blog
+Victors-MacBook:blog victor&lt;span class="nv"&gt;$ &lt;/span&gt;pelican-quickstart
+Welcome to pelican-quickstart v3.6.3.
+
+This script will &lt;span class="nb"&gt;help &lt;/span&gt;you create a new Pelican-based website.
+
+Please answer the following questions so this script can generate the files
+needed by Pelican.
+
+
+&amp;gt; Where &lt;span class="k"&gt;do&lt;/span&gt; you want to create your new web site? &lt;span class="o"&gt;[&lt;/span&gt;.&lt;span class="o"&gt;]&lt;/span&gt;
+&amp;gt; What will be the title of this web site? Victor Gau
+&amp;gt; Who will be the author of this web site? Victor Gau
+&amp;gt; What will be the default language of this web site? &lt;span class="o"&gt;[&lt;/span&gt;en&lt;span class="o"&gt;]&lt;/span&gt;
+&amp;gt; Do you want to specify a URL prefix? e.g., http://example.com   &lt;span class="o"&gt;(&lt;/span&gt;Y/n&lt;span class="o"&gt;)&lt;/span&gt;
+&amp;gt; What is your URL prefix? &lt;span class="o"&gt;(&lt;/span&gt;see above example&lt;span class="p"&gt;;&lt;/span&gt; no trailing slash&lt;span class="o"&gt;)&lt;/span&gt; http://victorgau.github.io
+&amp;gt; Do you want to &lt;span class="nb"&gt;enable &lt;/span&gt;article pagination? &lt;span class="o"&gt;(&lt;/span&gt;Y/n&lt;span class="o"&gt;)&lt;/span&gt;
+&amp;gt; How many articles per page &lt;span class="k"&gt;do&lt;/span&gt; you want? &lt;span class="o"&gt;[&lt;/span&gt;10&lt;span class="o"&gt;]&lt;/span&gt;
+&amp;gt; What is your &lt;span class="nb"&gt;time &lt;/span&gt;zone? &lt;span class="o"&gt;[&lt;/span&gt;Europe/Paris&lt;span class="o"&gt;]&lt;/span&gt; Asia/Taipei
+&amp;gt; Do you want to generate a Fabfile/Makefile to automate generation and publishing? &lt;span class="o"&gt;(&lt;/span&gt;Y/n&lt;span class="o"&gt;)&lt;/span&gt;
+&amp;gt; Do you want an auto-reload &lt;span class="p"&gt;&amp;amp;&lt;/span&gt; simpleHTTP script to assist with theme and site development? &lt;span class="o"&gt;(&lt;/span&gt;Y/n&lt;span class="o"&gt;)&lt;/span&gt;
+&amp;gt; Do you want to upload your website using FTP? &lt;span class="o"&gt;(&lt;/span&gt;y/N&lt;span class="o"&gt;)&lt;/span&gt;
+&amp;gt; Do you want to upload your website using SSH? &lt;span class="o"&gt;(&lt;/span&gt;y/N&lt;span class="o"&gt;)&lt;/span&gt;
+&amp;gt; Do you want to upload your website using Dropbox? &lt;span class="o"&gt;(&lt;/span&gt;y/N&lt;span class="o"&gt;)&lt;/span&gt;
+&amp;gt; Do you want to upload your website using S3? &lt;span class="o"&gt;(&lt;/span&gt;y/N&lt;span class="o"&gt;)&lt;/span&gt;
+&amp;gt; Do you want to upload your website using Rackspace Cloud Files? &lt;span class="o"&gt;(&lt;/span&gt;y/N&lt;span class="o"&gt;)&lt;/span&gt;
+&amp;gt; Do you want to upload your website using GitHub Pages? &lt;span class="o"&gt;(&lt;/span&gt;y/N&lt;span class="o"&gt;)&lt;/span&gt; Y
+&amp;gt; Is this your personal page &lt;span class="o"&gt;(&lt;/span&gt;username.github.io&lt;span class="o"&gt;)&lt;/span&gt;? &lt;span class="o"&gt;(&lt;/span&gt;y/N&lt;span class="o"&gt;)&lt;/span&gt; Y
+Done. Your new project is available at /Users/victor/code/blog
+Victors-MacBook:blog victor&lt;span class="err"&gt;$&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Since I'd like to put my blog onto github, the answers to the github related questions are 'Yes'.&lt;/p&gt;
+&lt;p&gt;The tree structure after running &lt;code&gt;pelican-quickstart&lt;/code&gt; is as follows:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;Victors-MacBook:blog victor&lt;span class="nv"&gt;$ &lt;/span&gt;tree
+.
+├── Makefile
+├── content
+├── develop_server.sh
+├── fabfile.py
+├── output
+├── pelicanconf.py
+└── publishconf.py
+
+&lt;span class="m"&gt;2&lt;/span&gt; directories, &lt;span class="m"&gt;5&lt;/span&gt; files
+Victors-MacBook:blog victor&lt;span class="err"&gt;$&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;There are two configuration files in the directory:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;pelicanconf.py&lt;/code&gt; is intended to be used for previewing.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;publishconf.py&lt;/code&gt; is intended to be used for publishing.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Makefile&lt;/code&gt; and &lt;code&gt;fabfile.py&lt;/code&gt; are intended for automation.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;content&lt;/code&gt; is the directory for the source code of your articles.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;output&lt;/code&gt; is the directory for compilation output, i.e., the html files of your static blog.&lt;/p&gt;
+&lt;h2&gt;Pelican Themes:&lt;/h2&gt;
+&lt;p&gt;You can easily change the style of your blog by setting a specific theme in the configuration file.&lt;/p&gt;
+&lt;p&gt;To do so, you need to download the themes first.&lt;/p&gt;
+&lt;p&gt;You can do it by running the following command.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;clone&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;recursive&lt;/span&gt; &lt;span class="n"&gt;https&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;github&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;getpelican&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;pelican&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;themes&lt;/span&gt; &lt;span class="o"&gt;./&lt;/span&gt;&lt;span class="n"&gt;pelican&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;themes&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;After downloading the theme files, put the following line in &lt;code&gt;pelicanconf.py&lt;/code&gt; or &lt;code&gt;publishconf.py&lt;/code&gt; to use the theme.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;THEME&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;pelican-themes/pelican-bootstrap3&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Plugins:&lt;/h2&gt;
+&lt;p&gt;Pelican supports varied plugins.  You can use the plugin to render math equations, embed iPython notebook into the post, etc.&lt;/p&gt;
+&lt;p&gt;To use plugins, download them first by running the following command.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;clone&lt;/span&gt; &lt;span class="n"&gt;https&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;github&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;getpelican&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;pelican&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;plugins&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;And then, put the following settings into &lt;code&gt;pelicanconf.py&lt;/code&gt; or &lt;code&gt;publishconf.py&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The following is an example to use &lt;code&gt;render_math&lt;/code&gt; plugin.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;PLUGIN_PATHS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;pelican-plugins&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="n"&gt;PLUGINS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;render_math&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Testing Math Equation: &lt;span class="math"&gt;\(E=MC^2\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;If you are using markdown, syntax highlighting is already supported.&lt;/p&gt;
 &lt;p&gt;Testing Syntax Highlighting:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
 &lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;
@@ -15,6 +106,28 @@
 &lt;/pre&gt;&lt;/div&gt;
 
 
+&lt;h2&gt;Fabric:&lt;/h2&gt;
+&lt;p&gt;To use fabric for blog automation, please reference to &lt;a href="http://nafiulis.me/making-a-static-blog-with-pelican.html"&gt;Nafiul's article&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Disqus:&lt;/h2&gt;
+&lt;p&gt;Most pelican themes natively support disqus to allow people comment on your post.&lt;/p&gt;
+&lt;p&gt;To use disqus, you need to register an account at &lt;a href="https://disqus.com/"&gt;disqus.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;And then, add your site from &lt;code&gt;disqus.com/admin&lt;/code&gt; to get your sitename.&lt;/p&gt;
+&lt;p&gt;Add the sitename into the configuration file, &lt;code&gt;pelicanconf.py&lt;/code&gt; or &lt;code&gt;publishconf.py&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;DISQUS_SITENAME&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;YourSiteName&amp;#39;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;After setting the &lt;code&gt;DISQUS_SITENAME&lt;/code&gt; and re-compilation, You should see disqus comment at the end of your post.&lt;/p&gt;
+&lt;p&gt;Note that you would not see disqus comment when testing in the local environment.&lt;/p&gt;
+&lt;h2&gt;References:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://blog.osteel.me/posts/2015/02/24/install-and-deploy-a-pelican-blog-using-fabric-part-1-local-environment.html"&gt;Install and deploy a Pelican blog using Fabric - Part 1: local environment&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.osteel.me/posts/2015/02/26/install-and-deploy-a-pelican-blog-using-fabric-part-2-installation-and-configuration.html"&gt;Install and deploy a Pelican blog using Fabric - Part 2: installation and configuration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.osteel.me/posts/2015/03/02/install-and-deploy-a-pelican-blog-using-fabric-part-3-fabric.html"&gt;Install and deploy a Pelican blog using Fabric - Part 3: Fabric&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.osteel.me/posts/2015/03/04/install-and-deploy-a-pelican-blog-using-fabric-part-4-workflow-extras-and-conclusion.html"&gt;Install and deploy a Pelican blog using Fabric - Part 4: workflow, extras and conclusion&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://nafiulis.me/making-a-static-blog-with-pelican.html"&gt;Making a Static Blog with Pelican&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://pbpython.com/pelican-config.html"&gt;Configuring Pelican Static Blog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
     var align = "center",
         indent = "0em",
