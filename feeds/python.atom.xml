@@ -1,5 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Victor Gau</title><link href="http://victorgau.github.io/" rel="alternate"></link><link href="http://victorgau.github.io/feeds/python.atom.xml" rel="self"></link><id>http://victorgau.github.io/</id><updated>2015-11-12T16:38:00+08:00</updated><entry><title>Setting up Pelican for Github Pages</title><link href="http://victorgau.github.io/setting-up-pelican-for-github-pages.html" rel="alternate"></link><updated>2015-11-12T16:38:00+08:00</updated><author><name>Victor Gau</name></author><id>tag:victorgau.github.io,2015-11-12:setting-up-pelican-for-github-pages.html</id><summary type="html">&lt;h2&gt;Installing Pelican:&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Victor Gau</title><link href="http://victorgau.github.io/" rel="alternate"></link><link href="http://victorgau.github.io/feeds/python.atom.xml" rel="self"></link><id>http://victorgau.github.io/</id><updated>2015-11-19T17:07:00+08:00</updated><entry><title>Creating Virtual Environment Using Conda</title><link href="http://victorgau.github.io/creating-virtual-environment-using-conda.html" rel="alternate"></link><updated>2015-11-19T17:07:00+08:00</updated><author><name>Victor Gau</name></author><id>tag:victorgau.github.io,2015-11-19:creating-virtual-environment-using-conda.html</id><summary type="html">&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# 檢查 conda 的版本&lt;/span&gt;
+&lt;span class="n"&gt;conda&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;V&lt;/span&gt;
+
+&lt;span class="c"&gt;# 更新 conda&lt;/span&gt;
+&lt;span class="n"&gt;conda&lt;/span&gt; &lt;span class="n"&gt;update&lt;/span&gt; &lt;span class="n"&gt;conda&lt;/span&gt;
+
+&lt;span class="c"&gt;# 建立 virtual environment&lt;/span&gt;
+&lt;span class="n"&gt;conda&lt;/span&gt; &lt;span class="n"&gt;create&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt; &lt;span class="n"&gt;yourenvname&lt;/span&gt; &lt;span class="n"&gt;python&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="n"&gt;anaconda&lt;/span&gt;
+
+&lt;span class="c"&gt;# 列出所有 virtual environment&lt;/span&gt;
+&lt;span class="n"&gt;conda&lt;/span&gt; &lt;span class="n"&gt;info&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;e&lt;/span&gt;
+
+&lt;span class="c"&gt;# 啟動 virtual environment&lt;/span&gt;
+&lt;span class="n"&gt;source&lt;/span&gt; &lt;span class="n"&gt;activate&lt;/span&gt; &lt;span class="n"&gt;yourenvname&lt;/span&gt;
+
+&lt;span class="c"&gt;# 安裝 package (我覺得使用 pip 好像比較簡單！)&lt;/span&gt;
+&lt;span class="n"&gt;conda&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt; &lt;span class="n"&gt;yourenvname&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;package&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+
+&lt;span class="c"&gt;# 注意：如果沒有加 &amp;quot;-n yourenvname&amp;quot;，則套件會被安裝到 root env&lt;/span&gt;
+
+&lt;span class="c"&gt;# 停止 virtual environment&lt;/span&gt;
+&lt;span class="n"&gt;source&lt;/span&gt; &lt;span class="n"&gt;deactivate&lt;/span&gt;
+
+&lt;span class="c"&gt;# 刪除 virtual environment&lt;/span&gt;
+&lt;span class="n"&gt;conda&lt;/span&gt; &lt;span class="n"&gt;remove&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt; &lt;span class="n"&gt;yourenvname&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nb"&gt;all&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Reference:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/20/conda/"&gt;Create virtual environments for python with conda&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="Python"></category><category term="Conda"></category></entry><entry><title>Setting up Pelican for Github Pages</title><link href="http://victorgau.github.io/setting-up-pelican-for-github-pages.html" rel="alternate"></link><updated>2015-11-12T16:38:00+08:00</updated><author><name>Victor Gau</name></author><id>tag:victorgau.github.io,2015-11-12:setting-up-pelican-for-github-pages.html</id><summary type="html">&lt;h2&gt;Installing Pelican:&lt;/h2&gt;
 &lt;p&gt;To install pelican, run the following command.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;pip&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;pelican&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
