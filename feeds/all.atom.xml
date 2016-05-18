@@ -68,7 +68,7 @@
 &lt;span class="n"&gt;source&lt;/span&gt; &lt;span class="n"&gt;deactivate&lt;/span&gt;
 
 &lt;span class="c"&gt;# 刪除 virtual environment&lt;/span&gt;
-&lt;span class="n"&gt;conda&lt;/span&gt; &lt;span class="n"&gt;remove&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt; &lt;span class="n"&gt;yourenvname&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nb"&gt;all&lt;/span&gt;
+&lt;span class="n"&gt;conda&lt;/span&gt; &lt;span class="n"&gt;remove&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt; &lt;span class="n"&gt;yourenvname&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="nb"&gt;all&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
