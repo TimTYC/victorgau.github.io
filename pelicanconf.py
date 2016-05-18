@@ -31,18 +31,20 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
 # Social widget
 SOCIAL = (('Github', 'http://github.com/victorgau'),)
 
+DISPLAY_TAGS_INLINE = True
+
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
-#RELATIVE_URLS = False
+RELATIVE_URLS = False
 
 THEME = "pelican-themes/pelican-bootstrap3"
 DISQUS_SITENAME = 'victorgau'
 PLUGIN_PATHS = ['pelican-plugins']
 PLUGINS = ['render_math', 'liquid_tags.img', 'liquid_tags.video',
            'liquid_tags.youtube', 'liquid_tags.vimeo',
-           'liquid_tags.include_code', 'liquid_tags.notebook']
+           'liquid_tags.include_code', 'liquid_tags.notebook', 'tag_cloud']
 
 YEAR_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/index.html'
 MONTH_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/{date:%b}/index.html'

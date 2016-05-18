@@ -5,6 +5,15 @@ Category: Python
 Slug: setting-up-pelican-for-github-pages
 Summary: Setting up pelican for github pages
 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- pelican github -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3914607163427066"
+     data-ad-slot="4932383565"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Installing Pelican:
 

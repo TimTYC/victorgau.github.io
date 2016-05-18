@@ -5,6 +5,16 @@ Category: Python
 Slug: creating-virtual-environment-using-conda
 Summary: Creating Virtual Environments Using Conda
 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- pelican github -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3914607163427066"
+     data-ad-slot="4932383565"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ```Python
 # 檢查 conda 的版本
 conda -V
@@ -30,7 +40,7 @@ conda install -n yourenvname [package]
 source deactivate
 
 # 刪除 virtual environment
-conda remove -n yourenvname -all
+conda remove -n yourenvname --all
 ```
 
 Reference:
