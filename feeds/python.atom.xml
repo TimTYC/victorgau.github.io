@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Victor Gau</title><link href="http://victorgau.github.io/" rel="alternate"></link><link href="http://victorgau.github.io/feeds/python.atom.xml" rel="self"></link><id>http://victorgau.github.io/</id><updated>2015-11-19T17:07:00+08:00</updated><entry><title>Creating Virtual Environment Using Conda</title><link href="http://victorgau.github.io/creating-virtual-environment-using-conda.html" rel="alternate"></link><updated>2015-11-19T17:07:00+08:00</updated><author><name>Victor Gau</name></author><id>tag:victorgau.github.io,2015-11-19:creating-virtual-environment-using-conda.html</id><summary type="html">&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# 檢查 conda 的版本&lt;/span&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Victor Gau</title><link href="http://victorgau.github.io/" rel="alternate"></link><link href="http://victorgau.github.io/feeds/python.atom.xml" rel="self"></link><id>http://victorgau.github.io/</id><updated>2015-11-19T17:07:00+08:00</updated><entry><title>Creating Virtual Environment Using Conda</title><link href="http://victorgau.github.io/creating-virtual-environment-using-conda.html" rel="alternate"></link><updated>2015-11-19T17:07:00+08:00</updated><author><name>Victor Gau</name></author><id>tag:victorgau.github.io,2015-11-19:creating-virtual-environment-using-conda.html</id><summary type="html">&lt;script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"&gt;&lt;/script&gt;
+
+&lt;!-- pelican github --&gt;
+
+&lt;p&gt;&lt;ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3914607163427066"
+     data-ad-slot="4932383565"&gt;&lt;/ins&gt;
+&lt;script&gt;
+(adsbygoogle = window.adsbygoogle || []).push({});
+&lt;/script&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# 檢查 conda 的版本&lt;/span&gt;
 &lt;span class="n"&gt;conda&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;V&lt;/span&gt;
 
 &lt;span class="c"&gt;# 更新 conda&lt;/span&gt;
@@ -30,7 +41,18 @@
 &lt;p&gt;Reference:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/20/conda/"&gt;Create virtual environments for python with conda&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="Python"></category><category term="Conda"></category></entry><entry><title>Setting up Pelican for Github Pages</title><link href="http://victorgau.github.io/setting-up-pelican-for-github-pages.html" rel="alternate"></link><updated>2015-11-12T16:38:00+08:00</updated><author><name>Victor Gau</name></author><id>tag:victorgau.github.io,2015-11-12:setting-up-pelican-for-github-pages.html</id><summary type="html">&lt;h2&gt;Installing Pelican:&lt;/h2&gt;
+&lt;/ul&gt;</summary><category term="Python"></category><category term="Conda"></category></entry><entry><title>Setting up Pelican for Github Pages</title><link href="http://victorgau.github.io/setting-up-pelican-for-github-pages.html" rel="alternate"></link><updated>2015-11-12T16:38:00+08:00</updated><author><name>Victor Gau</name></author><id>tag:victorgau.github.io,2015-11-12:setting-up-pelican-for-github-pages.html</id><summary type="html">&lt;script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"&gt;&lt;/script&gt;
+
+&lt;!-- pelican github --&gt;
+
+&lt;p&gt;&lt;ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3914607163427066"
+     data-ad-slot="4932383565"&gt;&lt;/ins&gt;
+&lt;script&gt;
+(adsbygoogle = window.adsbygoogle || []).push({});
+&lt;/script&gt;&lt;/p&gt;
+&lt;h2&gt;Installing Pelican:&lt;/h2&gt;
 &lt;p&gt;To install pelican, run the following command.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;pip&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;pelican&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
