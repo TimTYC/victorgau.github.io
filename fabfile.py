@@ -17,15 +17,6 @@ Slug: {slug}
 Summary:
 Status: draft
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- pelican github -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
-     data-ad-client="ca-pub-3914607163427066"
-     data-ad-slot="4932383565"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 """
 
 # Local path configuration (can be absolute or relative to fabfile)
