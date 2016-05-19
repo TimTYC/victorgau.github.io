@@ -2,7 +2,8 @@
 <html lang="en"
 >
 <head>
-    <title>Tags - Victor Gau</title>
+    <title>Search - Victor Gau
+</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -230,62 +231,7 @@ Victor Gau            </a>
     <div class="row">
         <div class="col-sm-9">
 
-    <section id="tags">
-        <h1>Tags for Victor Gau</h1>
-        <div class="panel-group" id="accordion">            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-conda">Conda <span class="badge pull-right">1</span></a>
-                    </h4>
-                </div>
-                <div id="collapse-conda" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <p><span class="categories-timestamp"><time datetime="2015-11-19T17:07:00+08:00">Thu 19 November 2015</time></span> <a href="http://victorgau.github.io/creating-virtual-environment-using-conda.html">Creating Virtual Environment Using Conda</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-gu-piao">股票 <span class="badge pull-right">3</span></a>
-                    </h4>
-                </div>
-                <div id="collapse-gu-piao" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <p><span class="categories-timestamp"><time datetime="2016-05-18T18:35:00+08:00">Wed 18 May 2016</time></span> <a href="http://victorgau.github.io/investment-terms.html">投資名詞</a></p>
-                        <p><span class="categories-timestamp"><time datetime="2016-05-18T13:40:00+08:00">Wed 18 May 2016</time></span> <a href="http://victorgau.github.io/financial-statement-analysis.html">財務報表分析</a></p>
-                        <p><span class="categories-timestamp"><time datetime="2016-05-18T11:28:00+08:00">Wed 18 May 2016</time></span> <a href="http://victorgau.github.io/investment-related-urls.html">投資相關連結</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-pelican">Pelican <span class="badge pull-right">1</span></a>
-                    </h4>
-                </div>
-                <div id="collapse-pelican" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <p><span class="categories-timestamp"><time datetime="2015-11-12T16:38:00+08:00">Thu 12 November 2015</time></span> <a href="http://victorgau.github.io/setting-up-pelican-for-github-pages.html">Setting up Pelican for Github Pages</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-python">Python <span class="badge pull-right">2</span></a>
-                    </h4>
-                </div>
-                <div id="collapse-python" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <p><span class="categories-timestamp"><time datetime="2015-11-19T17:07:00+08:00">Thu 19 November 2015</time></span> <a href="http://victorgau.github.io/creating-virtual-environment-using-conda.html">Creating Virtual Environment Using Conda</a></p>
-                        <p><span class="categories-timestamp"><time datetime="2015-11-12T16:38:00+08:00">Thu 12 November 2015</time></span> <a href="http://victorgau.github.io/setting-up-pelican-for-github-pages.html">Setting up Pelican for Github Pages</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
+<div id="tipue_search_content"></div>
         </div>
         <div class="col-sm-3" id="sidebar">
             <aside>
@@ -427,5 +373,18 @@ Victor Gau            </a>
     </script>
     <!-- End Google Analytics Code -->
 
+    <link href="http://victorgau.github.io/theme/tipuesearch/tipuesearch.css" rel="stylesheet">
+    <script type="text/javascript" src="http://victorgau.github.io/theme/tipuesearch/tipuesearch_set.js"></script>
+    <script type="text/javascript" src="http://victorgau.github.io/theme/tipuesearch/tipuesearch.min.js"></script>
+    <script>
+    $(document).ready(function() {
+      $('#tipue_search_input').tipuesearch({
+        'mode' : 'json',
+        'show': 10,
+        'newWindow': false,
+        'contentLocation': 'tipuesearch_content.json'
+      });
+    });
+    </script>
 </body>
 </html>
