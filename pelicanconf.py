@@ -62,5 +62,5 @@ MONTH_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/{date:%b}/index.html'
 BANNER = 'images/free_banner_red.jpg'
 BANNER_SUBTITLE = 'Just Do It!'
 
-ABOUT_ME = u"""突然發現自己對於股票投機的興趣，到了不做不可的程度，所以弄一個網站來記錄一些心得。"""
+ABOUT_ME = u"""突然發現自己對於股票投機的興趣，到了不做不可的程度，所以弄一個網站來記錄一些自己作為散戶投資人的投資心得。"""
 AVATAR = 'images/victor.jpg'
